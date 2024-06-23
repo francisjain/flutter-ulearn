@@ -4,8 +4,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ulearn/app_blocs.dart';
 import 'package:ulearn/app_events.dart';
 import 'package:ulearn/app_states.dart';
-import 'package:ulearn/welcome/bloc/welcome_blocs.dart';
-import 'package:ulearn/welcome/welcome.dart';
+import 'package:ulearn/pages/sign_in/sign_in.dart';
+import 'package:ulearn/pages/welcome/bloc/welcome_blocs.dart';
+import 'package:ulearn/pages/welcome/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,9 +28,16 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: ScreenUtilInit(builder: (context, child) {
-        return const MaterialApp(
+        return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: Welcome(),
+          theme: ThemeData(
+              appBarTheme: const AppBarTheme(
+                  elevation: 0, backgroundColor: Colors.white)),
+          home: const Welcome(),
+          routes: {
+            "myHomePage": (context) => const MyHomePage(),
+            "signIn": (context) => const SignIn(),
+          },
         );
       }),
     );
@@ -75,7 +83,7 @@ class MyHomePage extends StatelessWidget {
             child: const Icon(Icons.add),
           ),
           FloatingActionButton(
-            heroTag: "decrement",
+            heroTag: "decrement  ",
             onPressed: () =>
                 BlocProvider.of<AppBlocs>(context).add(Decrement()),
             tooltip: 'Decrement',
