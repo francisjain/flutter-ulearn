@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "802420761729",
-    "project_id": "ulearning-app-e190e",
-    "storage_bucket": "ulearning-app-e190e.appspot.com"
+    "project_number": "520418077073",
+    "project_id": "flutter-auth-ef40f",
+    "storage_bucket": "flutter-auth-ef40f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:802420761729:android:f975c08bdf295fabee5980",
+        "mobilesdk_app_id": "1:520418077073:android:b46606385b17929565d230",
         "android_client_info": {
-          "package_name": "com.francis.ulearn"
+          "package_name": "com.example.ulearn"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBw5RWeUNxPm5uupk5QaConOvqtsM6tcUU"
+          "current_key": "AIzaSyBhwXbgnAIZWf_MmNg0E7D2Psh2vT-MBLQ"
         }
       ],
       "services": {
